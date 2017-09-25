@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="VideoCell" rowHeight="100" id="KGk-i7-Jjw" customClass="VideoTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="100"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <frame key="frameInset" width="320" height="100"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="AsyncImageView" translatesAutoresizingMaskIntoConstraints="NO" id="T7m-3g-ryz" customClass="AsyncImageView">
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="T7m-3g-ryz" secondAttribute="height" multiplier="1:1" id="d7W-NM-TdV"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tenaz Paul shared Mang Ferdie's video — with Arun Jose." textAlignment="natural" lineBreakMode="characterWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pe0-05-hXS">
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" red="0.14238520285698772" green="0.11004766996149994" blue="0.47624757283709829" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2010-12-01T21:35:43+0000 " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZKK-Pi-gm4">
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="Enz-uN-z4O"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hup-qD-27D">
+                        <color key="backgroundColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="18" id="Iul-oZ-LaY"/>
+                            <constraint firstAttribute="width" constant="84" id="jVI-5N-IMF"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" style="UICTFontTextStyleFootnote"/>
+                        <state key="normal" title="Download">
+                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="ZKK-Pi-gm4" firstAttribute="leading" secondItem="T7m-3g-ryz" secondAttribute="trailing" constant="8" id="6YT-Wt-0Ca"/>
+                    <constraint firstItem="T7m-3g-ryz" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="6" id="6iR-C0-tUi"/>
+                    <constraint firstItem="Hup-qD-27D" firstAttribute="leading" secondItem="T7m-3g-ryz" secondAttribute="trailing" constant="8" id="DVM-95-ne1"/>
+                    <constraint firstItem="ZKK-Pi-gm4" firstAttribute="top" secondItem="Pe0-05-hXS" secondAttribute="bottom" constant="1" id="K40-ve-xBF"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="ZKK-Pi-gm4" secondAttribute="trailing" id="Sf6-Ad-HMa"/>
+                    <constraint firstAttribute="topMargin" secondItem="Pe0-05-hXS" secondAttribute="top" id="Vum-bH-7Qv"/>
+                    <constraint firstItem="Hup-qD-27D" firstAttribute="top" secondItem="ZKK-Pi-gm4" secondAttribute="bottom" constant="-1" id="an2-Yb-z1Y"/>
+                    <constraint firstAttribute="topMargin" secondItem="T7m-3g-ryz" secondAttribute="top" id="awY-GA-I5L"/>
+                    <constraint firstItem="Pe0-05-hXS" firstAttribute="leading" secondItem="T7m-3g-ryz" secondAttribute="trailing" constant="8" id="pEI-Ic-4ml"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="T7m-3g-ryz" secondAttribute="bottom" constant="3.5" id="yJT-UL-iXg"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="Pe0-05-hXS" secondAttribute="trailing" id="ydI-Nn-2FR"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="downloadButton" destination="Hup-qD-27D" id="QPV-BB-vjl"/>
+                <outlet property="storyLabel" destination="Pe0-05-hXS" id="t3Q-wd-hKJ"/>
+                <outlet property="timeLabel" destination="ZKK-Pi-gm4" id="4po-gC-2PX"/>
+                <outlet property="videoThumImageView" destination="T7m-3g-ryz" id="b9t-jY-3Xf"/>
+            </connections>
+            <point key="canvasLocation" x="33" y="108"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="AsyncImageView" width="10" height="18"/>
+    </resources>
+</document>
